@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Sig Up Result</title>
+</head>
+<body>
+<header>
+<h1>Sign Up Result</h1>
+</header>
+<main>
+<div th:text="'Name:: ' + ${user.username}"></div>
+<div th:text="'Password:: ' + ${user.password}"></div>
+<div th:text="'Descripción:: ' + ${user.description}"></div>
+<div th:text="'Fecha de nacimiento:: ' + ${user.birth}"></div>
+<div th:text="'Estado Civil:: ' + ${user.status}"></div>
+<div th:text="'Sexo:: ' + ${user.sex}"></div>
+<div>
+	<ul>
+		<li th:each="vehiculos : ${user.vehicles}" th:text="'Vehículos:: ' + ${vehiculos}"></li>
+	</ul>
+</div>
+<div th:text="'Vehículos:: ' + ${user.vehicles}"></div>
+<a href="/signup">Send again</a>
+</main>
+
+</body>
+</html>
