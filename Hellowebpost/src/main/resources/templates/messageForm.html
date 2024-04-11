@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>s04.post</title>
+</head>
+<body>
+	<h1>Form</h1>
+	<form action="#" th:action="@{/message}" th:object="${message}"
+		method="post">
+		<div>
+			<label for="title">Title</label>
+		</div>
+		<div>
+			<input type="text" th:field="*{title}" />
+		</div>
+		<div>
+			<label for="content">Content</label>
+		</div>
+		<div>
+			<textarea th:field="*{content}"></textarea>
+		</div>
+
+		<p>
+			<input type="submit" value="Submit">
+		</p>
+	</form>
+
+</body>
+</html>
