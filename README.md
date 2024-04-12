@@ -1,9 +1,7 @@
 #Proyectos de Spring MVC simples.
 
 - Helloweb
-Es un proyecto web Spring Boot mínimo que tiene una página HTML estática, un controlador y una plantilla Thymeleaf, no tiene fichero de configuración web.xml y los recursos estáticos o plantillas estan en la carpeta src/main/resorces.
-
-Tiene un enlace que al clicar en el se dirige a otra página de saludo.
+Es un proyecto web Spring Boot mínimo que tiene una página HTML estática, un controlador y una plantilla Thymeleaf, no tiene fichero de configuración web.xml y los recursos estáticos o plantillas estan en la carpeta src/main/resorces. Tiene un enlace que al clicar en el se dirige a otra página de saludo.
 
 - Hellowebget
 Aplicación web que pasa parámetros GET de una dorección URL a otra para mostrala como contenido dinámico. Cada vez que se solicita una URL, ésta pasa parámetros mediante GET al servidor y los pasa a la aplicación web.
